@@ -33,7 +33,7 @@ LedStrip::LedStrip(int lenght, int pin)
 {
     strip = Adafruit_NeoPixel(lenght, pin, NEO_GRB + NEO_KHZ800);
     strip.begin();
-    array = (ulong *)malloc(lenght);
+    array = (unsigned long *)malloc(lenght);
     len = lenght;
 }
 

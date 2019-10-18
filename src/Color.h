@@ -12,7 +12,7 @@ class Color
 public:
     uint8_t R, G, B;
     Color(int red, int green, int blue);
-    Color(ulong hex);
+    Color(unsigned long hex);
     Color(){};
     ~Color(){};
     operator int() const
@@ -30,7 +30,7 @@ Color::Color(int red, int green, int blue)
     B = blue;
 }
 
-Color::Color(ulong hex)
+Color::Color(unsigned long hex)
 {
     R = (hex & 0xFF0000) >> 16;
     G = (hex & 0x00FF00) >> 8;
@@ -44,7 +44,6 @@ Color Color::FromHSV(int hue, int saturation, int value)
         hue = HUES - abs(hue % HUES);
     else
         hue = hue % HUES;
-    printf("hue = %d   ", hue * 80);
     i = hue / HUE_SECTOR_SIZE;
     f = hue - (i * HUE_SECTOR_SIZE);
     switch (i)
