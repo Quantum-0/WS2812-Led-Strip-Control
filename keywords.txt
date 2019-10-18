@@ -1,0 +1,37 @@
+#######################################
+# Syntax Coloring Map For QuantumButton
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PixelMixMode	KEYWORD1
+LedStrip    KEYWORD1
+Color   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+Fill	KEYWORD2
+SetPixel	KEYWORD2
+SetLine	KEYWORD2
+SetGradient	KEYWORD2
+Write	KEYWORD2
+Print	KEYWORD2
+FromHSV	KEYWORD2
+MergeColors	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+HUE_SECTOR_SIZE LITERAL1
+HUES    LITERAL1
+PMM_NORMAL  LITERAL1
+PMM_ADD  LITERAL1
+PMM_SUBTRACT  LITERAL1
+PMM_MULTIPLY  LITERAL1
+PMM_MAX  LITERAL1
+PMM_MIN  LITERAL1
